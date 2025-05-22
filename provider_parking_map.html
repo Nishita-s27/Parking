@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ebf3f7a86bc2b612a3b53b789c00a237 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ebf3f7a86bc2b612a3b53b789c00a237" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ebf3f7a86bc2b612a3b53b789c00a237 = L.map(
+                "map_ebf3f7a86bc2b612a3b53b789c00a237",
+                {
+                    center: [19.1853, 72.8359],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_93a4f4cad12be2d261db106e23c14835 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_93a4f4cad12be2d261db106e23c14835.addTo(map_ebf3f7a86bc2b612a3b53b789c00a237);
+        
+    
+            var marker_9f4e3b38404d6edda31aea956777c065 = L.marker(
+                [19.1853, 72.8359],
+                {
+}
+            ).addTo(map_ebf3f7a86bc2b612a3b53b789c00a237);
+        
+    
+            var icon_b8a7c91ed3bd58982e61d250437024a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "parking",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_275aa302bd62666b5f0007927cd8ce9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4f64a2d40523966536c42a76a60d5d5 = $(`<div id="html_c4f64a2d40523966536c42a76a60d5d5" style="width: 100.0%; height: 100.0%;">             <b>Parking Space</b><br>             Address: malad west<br>             Rate: $5.0/hour<br>             Available: 0/1 spots             </div>`)[0];
+                popup_275aa302bd62666b5f0007927cd8ce9b.setContent(html_c4f64a2d40523966536c42a76a60d5d5);
+            
+        
+
+        marker_9f4e3b38404d6edda31aea956777c065.bindPopup(popup_275aa302bd62666b5f0007927cd8ce9b)
+        ;
+
+        
+    
+    
+            marker_9f4e3b38404d6edda31aea956777c065.bindTooltip(
+                `<div>
+                     Click for details
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9f4e3b38404d6edda31aea956777c065.setIcon(icon_b8a7c91ed3bd58982e61d250437024a7);
+            
+</script>
+</html>
